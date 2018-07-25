@@ -1,3 +1,18 @@
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCOInTpHZQ9WlZncKLYZF9QDs9Jl6dT8kQ",
+        authDomain: "redsocial-5dd74.firebaseapp.com",
+        databaseURL: "https://redsocial-5dd74.firebaseio.com",
+        projectId: "redsocial-5dd74",
+        storageBucket: "redsocial-5dd74.appspot.com",
+        messagingSenderId: "407665586750"
+      };
+      firebase.initializeApp(config);
+
+
+
+
+
 let txtNombre = document.getElementById('nombre');
 let txtMensaje = document.getElementById('mensaje');
 let txtEnviar = document.getElementById('btnEnviar');
@@ -24,7 +39,7 @@ btnEnviar.addEventListener("click", function() {
             let element = e.val();
             let nombre = element.name;
             let mensaje = element.message;
-            html += "<li><b>"+nombre+": </b>"+mensaje+"</li>";
+            html += "<p><b>"+nombre+": </b>"+mensaje+"</p>";
 
         });
         chatUl.innerHTML = html;
