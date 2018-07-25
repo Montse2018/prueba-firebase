@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Count_on_me.app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+
+
+
+</head>
+<body>
+   
+    <p>Bienvenida</p>
+  <form action="">
+    <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre">
+    </div>
+    <div>
+        <label for="mensaje">Mensaje</label> 
+        <textarea id="mensaje"></textarea>
+    </div>
+    <button type="button" id="btnEnviar">Enviar</button>
+  </form>
+
+  <ul id="chatUl">
+    <li>
+      <b>Nombre: </b>Mensaje
+    </li>
+    <li>
+        <b>Nombre</b>Mensaje
+    </li>
+  </ul>
+
+<!--    <input type="text" id="mensaje" placeholder="Ingresa un mensaje" class="form-control mr-sm-2 mb-2">
+    <button class="btn post" id="enviar">Enviar</button>
+    </div>-->
+
+    <!-- <script src="main.js"></script> -->
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCOInTpHZQ9WlZncKLYZF9QDs9Jl6dT8kQ",
+        authDomain: "redsocial-5dd74.firebaseapp.com",
+        databaseURL: "https://redsocial-5dd74.firebaseio.com",
+        projectId: "redsocial-5dd74",
+        storageBucket: "redsocial-5dd74.appspot.com",
+        messagingSenderId: "407665586750"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+  
+
+<script src="view.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
